@@ -1,0 +1,39 @@
+@use "sass:map";
+@use "../utils" as *;
+
+:root {
+  font-family: "Helevtica Neue", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+body {
+  background-color: map.get($cl-grey, 1);
+  color: map.get($cl-grey, 9);
+
+  padding-left: 240px;
+}
+
+main {
+  padding: 30px;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: "Helevtica Neue", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

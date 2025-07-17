@@ -1,0 +1,59 @@
+@use "sass:map";
+@use "../utils" as *;
+
+.sidenav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  height: 100%;
+  width: 240px;
+
+  background-color: white;
+
+  .brand {
+    padding: 30px 10px;
+    text-align: center;
+
+    .brand-name {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1em;
+    }
+
+    .brand-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      line-height: 1em;
+      text-transform: uppercase;
+    }
+  }
+
+  .navigation {
+    padding: 0 10px;
+    a {
+      display: flex;
+      align-items: center;
+
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+
+      svg {
+        margin-right: 5px;
+      }
+
+      &.active,
+      &:hover {
+        background-color: map.get($cl-grey, 2);
+      }
+    }
+  }
+}

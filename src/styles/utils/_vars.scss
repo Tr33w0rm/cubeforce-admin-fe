@@ -1,0 +1,29 @@
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1024px,
+);
+
+$colors: (
+  "blue": #00bbff,
+  "green": #1cce6c,
+  "yellow": #ffc526,
+  "teal": #00ff91,
+  "red": #d62828,
+  "white": #fcfcfc,
+  "grey": #f0f0f0,
+  "darkgrey": #1e1b1b,
+  "black": #121111,
+);
+
+$cl-grey: (
+  1: #f8f9fa,
+  2: #e9ecef,
+  3: #dee2e6,
+  4: #ced4da,
+  5: #adb5bd,
+  6: #6c757d,
+  7: #495057,
+  8: #343a40,
+  9: #212529,
+);
